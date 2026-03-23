@@ -10,7 +10,8 @@
 
 #elif defined(VE_PLATFORM_APPLE)
 
-    #define VOID_API __attribute__((visibility("default")))
+    // __attribute__((visibility("default"))) not required for premake
+    #define VOID_API 
 
 #else
 

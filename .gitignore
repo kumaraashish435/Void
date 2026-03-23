@@ -2,3 +2,5 @@
 /build
 .DS_Store
 bin-int/
+Makefile
+/build-premake
