@@ -7,7 +7,10 @@ file(GLOB_RECURSE ENGINE_SRC
 
 add_library(VoidEngine SHARED ${ENGINE_SRC})
 
+add_subdirectory(vendor/spdlog)
+
 target_include_directories(VoidEngine PUBLIC src)
+target_link_libraries(VoidEngine PUBLIC spdlog)
 
 # Export symbols
 target_compile_definitions(VoidEngine PRIVATE VOID_BUILD_DLL)

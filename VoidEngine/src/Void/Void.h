@@ -3,6 +3,7 @@
 #include <iostream>
 
 #include "Void/Application.h"
+#include "Void/Log.h"
 
 
 // Entry point include
