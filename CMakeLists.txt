@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.20)
+project(Void)
+
+set(CMAKE_CXX_STANDARD 17)
+
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Debug)
+endif()
+
+set(OUTPUT_DIR ${CMAKE_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE})
+set(INT_DIR ${CMAKE_SOURCE_DIR}/bin-int/${CMAKE_BUILD_TYPE})
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIR})
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_DIR})
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${INT_DIR})
+
+add_subdirectory(VoidEngine)
+add_subdirectory(Sandbox)
