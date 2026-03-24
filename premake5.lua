@@ -80,3 +80,17 @@ project "Sandbox"
     filter "system:macosx"
         systemversion "14.0"
         defines { "VE_PLATFORM_APPLE" }
+
+
+
+
+
+
+
+
+-- delted command after build
+-- rm -rf Makefile bin bin-int build build-premake 
+
+--build command
+-- premake5 gmake2
+-- make // make config=debug
