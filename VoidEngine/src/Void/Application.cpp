@@ -1,6 +1,8 @@
 #include "Application.h"
 #include <iostream>
 
+#include "Events/ApplicationEvent.h"
+#include "Void/Log.h"
 
 namespace Void
 {
@@ -14,6 +16,8 @@ namespace Void
 
     void Application::Run()
     {
+        WindowResizeEvent e(1280, 720);
+        VD_CORE_INFO(e.ToString());
         while (true);
     }
 }

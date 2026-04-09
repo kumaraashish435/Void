@@ -78,7 +78,7 @@ project "Sandbox"
     }
 
     filter "system:macosx"
-        systemversion "14.0"
+        systemversion "26.3"
         defines { "VE_PLATFORM_APPLE" }
 
 

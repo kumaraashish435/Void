@@ -3,6 +3,7 @@ project(VoidEngine)
 
 file(GLOB_RECURSE ENGINE_SRC
     src/Void/*.cpp
+    Events/*.cpp
 )
 
 add_library(VoidEngine SHARED ${ENGINE_SRC})
